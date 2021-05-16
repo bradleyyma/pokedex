@@ -1,0 +1,27 @@
+POST http://localhost:3001/api/signin
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "password"
+}
+
+###
+
+POST http://localhost:3001/api/addFav
+content-type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZmUzZDM3N2EyNTdkNGEwNzcyOTQ4MiIsImlhdCI6MTYyMTE0MTQwMiwiZXhwIjoxNjIxMjI3ODAyfQ.vFXjEKahkQ4Izue2pA_sUuMwVr3KCdYHHWuG7brzz8Y
+
+{
+    "num": "2"
+}
+
+###
+
+POST http://localhost:3001/api/delFav
+content-type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZmUzZDM3N2EyNTdkNGEwNzcyOTQ4MiIsImlhdCI6MTYyMTE0MTQwMiwiZXhwIjoxNjIxMjI3ODAyfQ.vFXjEKahkQ4Izue2pA_sUuMwVr3KCdYHHWuG7brzz8Y
+
+{
+    "num": "2"
+}
